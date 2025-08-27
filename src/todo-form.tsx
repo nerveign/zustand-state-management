@@ -30,6 +30,7 @@ export function TodoForm() {
 
   return (
     <>
+      <h2>Todo List</h2>
       <form className="todo-form" onSubmit={handleSubmit}>
         <input type="text" value={text} placeholder="Add acticity" className="todo-input" onChange={handleChange} required />
         <button type="submit">{editingTodo ? 'Update' : 'Add'}</button>
