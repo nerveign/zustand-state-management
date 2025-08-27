@@ -49,7 +49,7 @@
 
 .btn-action-wrapper {
   display: flex;
-  gap: 12px;
+  gap: 8px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
