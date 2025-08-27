@@ -28,6 +28,10 @@
   border: 1px solid #5a5a5a;
 }
 
+.todo-input:focus {
+  border: 1px solid white;
+}
+
 .todo-ul {
   list-style: none;
   display: block;
