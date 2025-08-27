@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { addTodo, updateTodo, useTodoStore } from './store/todo-store';
 import { Button } from './components/ui/button';
-import './App.css';
 import { Input } from './components/ui/input';
 
 export function TodoForm() {

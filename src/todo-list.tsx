@@ -1,5 +1,4 @@
 import { editTodo, removeTodo, useTodoStore } from './store/todo-store';
-import './App.css';
 import { Button } from './components/ui/button';
 
 export function TodoList() {

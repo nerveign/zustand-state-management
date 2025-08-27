@@ -1,6 +1,5 @@
 import { TodoForm } from './todo-form';
 import { TodoList } from './todo-list';
-import './App.css';
 
 function App() {
   return (
