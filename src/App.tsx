@@ -4,9 +4,11 @@ import './App.css';
 
 function App() {
   return (
-    <div>
-      <TodoForm />
-      <TodoList />
+    <div className="flex justify-center h-screen items-center bg-bg-primary">
+      <div className="w-96">
+        <TodoForm />
+        <TodoList />
+      </div>
     </div>
   );
 }
