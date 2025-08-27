@@ -1,4 +1,5 @@
 import { editTodo, removeTodo, useTodoStore } from './store/todo-store';
+import './App.css';
 
 export function TodoList() {
   const todos = useTodoStore((state) => state.todo);
@@ -6,11 +7,14 @@ export function TodoList() {
   return (
     <>
       <div>
-        <ul>
+        <ul className="todo-ul">
           {todos.map((todo) => (
-            <li key={todo.id}>
-              {todo.text} <button onClick={() => removeTodo(todo.id)}>Remove</button>
-              <button onClick={() => editTodo(todo)}>Edit</button>
+            <li className="todo-li" key={todo.id}>
+              {todo.text}
+              <div className="btn-action-wrapper">
+                <button onClick={() => editTodo(todo)}>Edit</button>
+                <button onClick={() => removeTodo(todo.id)}>Remove</button>
+              </div>
             </li>
           ))}
         </ul>

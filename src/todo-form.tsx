@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { addTodo, updateTodo, useTodoStore } from './store/todo-store';
+import './App.css';
 
 export function TodoForm() {
   const [text, setText] = useState('');
@@ -28,9 +29,11 @@ export function TodoForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" onChange={handleChange} value={text} placeholder="Activity name" />
-      <button type="submit">{editingTodo ? 'Update' : 'Add'}</button>
-    </form>
+    <>
+      <form className="todo-form" onSubmit={handleSubmit}>
+        <input type="text" value={text} placeholder="Add acticity" className="todo-input" onChange={handleChange} required />
+        <button type="submit">{editingTodo ? 'Update' : 'Add'}</button>
+      </form>
+    </>
   );
 }

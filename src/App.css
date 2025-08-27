@@ -13,31 +13,43 @@
   font-weight: 500;
 }
 
+.todo-form {
+  display: flex;
+  max-height: 36px;
+  gap: 12px;
+}
+
+.todo-input {
+  border-radius: 8px;
+  width: 320px;
+  padding: 0.2em 0.5em;
+  font-size: 1em;
+  outline: none;
+  border: 1px solid #5a5a5a;
+}
+
+.todo-ul {
+  list-style: none;
+  display: block;
+  width: 100%;
+  padding: 0 4px;
+  margin: 20px 0;
+}
+
+.todo-li {
+  margin: 12px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
 .btn-wrapper {
   display: flex;
   gap: 12px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-action-wrapper {
+  display: flex;
+  gap: 12px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
