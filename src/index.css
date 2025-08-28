@@ -3,6 +3,7 @@
 
 @theme {
   --color-bg-primary: #242424;
+  --color-bg-secondary: #323232;
 }
 
 @custom-variant dark (&:is(.dark *));

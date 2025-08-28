@@ -33,7 +33,7 @@ export function TodoForm() {
     <div>
       <h2 className="text-center my-4 font-medium text-xl text-white">Todo List</h2>
       <form className="flex gap-3" onSubmit={handleSubmit}>
-        <Input className="text-white" type="text" value={text} placeholder="Add acticity" onChange={handleChange} required />
+        <Input className="text-white bg-bg-secondary" type="text" value={text} placeholder="Add acticity" onChange={handleChange} required />
         <Button type="submit">{editingTodo ? 'Update' : 'Add'}</Button>
       </form>
     </div>
