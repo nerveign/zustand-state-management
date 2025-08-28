@@ -15,7 +15,7 @@ export function TodoList() {
                 <Checkbox checked={todo.completed} onCheckedChange={() => toggleTodo(todo.id)} />
                 {todo.completed ? (
                   <>
-                    <span className="text-sm text-ash-gray font-medium block line-through">{todo.text}</span>
+                    <span className="text-sm text-muted-foreground font-medium block line-through">{todo.text}</span>
                   </>
                 ) : (
                   <>
