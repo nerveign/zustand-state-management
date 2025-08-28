@@ -4,7 +4,6 @@ import { Checkbox } from './components/ui/checkbox';
 
 export function TodoList() {
   const todos = useTodoStore((state) => state.todo);
-  console.log('Render bang');
 
   return (
     <>
@@ -14,7 +13,15 @@ export function TodoList() {
             <li className="flex justify-between my-4" key={todo.id}>
               <div className="flex gap-2 items-center">
                 <Checkbox checked={todo.completed} onCheckedChange={() => toggleTodo(todo.id)} />
-                <span className="text-sm text-gray-100 font-medium block">{todo.text}</span>
+                {todo.completed ? (
+                  <>
+                    <span className="text-sm text-ash-gray font-medium block line-through">{todo.text}</span>
+                  </>
+                ) : (
+                  <>
+                    <span className="text-sm text-gray-100 font-medium block">{todo.text}</span>
+                  </>
+                )}
               </div>
               <div className="flex gap-2">
                 <Button size={'sm'} variant={'outline'} onClick={() => editTodo(todo)}>
