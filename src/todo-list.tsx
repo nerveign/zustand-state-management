@@ -24,10 +24,10 @@ export function TodoList() {
                 )}
               </div>
               <div className="flex gap-2">
-                <Button size={'sm'} variant={'outline'} onClick={() => editTodo(todo)}>
+                <Button size={'sm'} variant={'outline'} className="cursor-pointer" onClick={() => editTodo(todo)}>
                   Edit
                 </Button>
-                <Button size={'sm'} variant={'outline'} onClick={() => removeTodo(todo.id)}>
+                <Button size={'sm'} variant={'outline'} className="cursor-pointer" onClick={() => removeTodo(todo.id)}>
                   Remove
                 </Button>
               </div>

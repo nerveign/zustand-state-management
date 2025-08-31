@@ -34,7 +34,9 @@ export function TodoForm() {
       <h2 className="text-center my-4 font-medium text-xl ">Todo List</h2>
       <form className="flex gap-3" onSubmit={handleSubmit}>
         <Input type="text" value={text} placeholder="Type acticity" onChange={handleChange} required />
-        <Button type="submit">{editingTodo ? 'Update' : 'Add'}</Button>
+        <Button type="submit" className="cursor-pointer">
+          {editingTodo ? 'Update' : 'Add'}
+        </Button>
       </form>
     </div>
   );
