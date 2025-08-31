@@ -19,7 +19,7 @@ export function TodoList() {
                   </>
                 ) : (
                   <>
-                    <span className="text-sm text-gray-100 font-medium block">{todo.text}</span>
+                    <span className="text-sm  font-medium block">{todo.text}</span>
                   </>
                 )}
               </div>
